@@ -1,1 +1,4 @@
 xmpp-client/node_modules/
+.terraform.lock.hcl
+.terraform/
+

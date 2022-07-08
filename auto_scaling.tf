@@ -8,6 +8,6 @@ resource "aws_autoscaling_group" "lm_autoscaling_group" {
     id      = aws_launch_template.xmpp_server_template.id
     version = "$Latest"
   }
-  depends_on = [aws_instance.app_server_master]
+  depends_on        = [aws_instance.app_server_master]
   target_group_arns = [aws_lb_target_group.lm-lb-tg.arn]
 }
